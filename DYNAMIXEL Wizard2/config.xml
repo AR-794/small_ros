@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config appVersion="2.1.12.1" appBuildDate="Dec  9 2024, 13:19:27" language="en" recoveryPort="">
+    <ScanOption>
+        <ProtocolList>
+            <Protocol version="1.0" value="true"/>
+            <Protocol version="2.0" value="true"/>
+            <Protocol version="MODBUS" value="false"/>
+        </ProtocolList>
+        <PortList>
+            <Port value="ttyS0"/>
+            <Port value="ttyS1"/>
+            <Port value="ttyS10"/>
+            <Port value="ttyS11"/>
+            <Port value="ttyS12"/>
+            <Port value="ttyS13"/>
+            <Port value="ttyS14"/>
+            <Port value="ttyS15"/>
+            <Port value="ttyS16"/>
+            <Port value="ttyS17"/>
+            <Port value="ttyS18"/>
+            <Port value="ttyS19"/>
+            <Port value="ttyS2"/>
+            <Port value="ttyS20"/>
+            <Port value="ttyS21"/>
+            <Port value="ttyS22"/>
+            <Port value="ttyS23"/>
+            <Port value="ttyS24"/>
+            <Port value="ttyS25"/>
+            <Port value="ttyS26"/>
+            <Port value="ttyS27"/>
+            <Port value="ttyS28"/>
+            <Port value="ttyS29"/>
+            <Port value="ttyS3"/>
+            <Port value="ttyS30"/>
+            <Port value="ttyS31"/>
+            <Port value="ttyS4"/>
+            <Port value="ttyS5"/>
+            <Port value="ttyS6"/>
+            <Port value="ttyS7"/>
+            <Port value="ttyS8"/>
+            <Port value="ttyS9"/>
+        </PortList>
+        <BaudrateList>
+            <Baudrate value="9600"/>
+            <Baudrate value="57600"/>
+            <Baudrate value="115200"/>
+            <Baudrate value="1000000"/>
+            <Baudrate value="2000000"/>
+            <Baudrate value="3000000"/>
+            <Baudrate value="4000000"/>
+            <Baudrate value="4500000"/>
+        </BaudrateList>
+        <Id start="0" end="252"/>
+    </ScanOption>
+    <ControlOption>
+        <Dec value="1"/>
+        <Hex value="1"/>
+        <Real value="1"/>
+        <Torque value="1"/>
+        <Led value="1"/>
+        <Position value="1"/>
+        <Velocity value="1"/>
+        <Current value="1"/>
+        <Load value="1"/>
+        <Temperature value="1"/>
+        <InverterTemperature value="1"/>
+        <MotorTemperature value="1"/>
+        <Voltage value="1"/>
+        <Dial ccw="90" cw="-90"/>
+    </ControlOption>
+    <GraphOption>
+        <ReadItems interval="10" withAging="0" speedMode="0" printMode="0">
+            <Item color="#ffff00" name="Present Position" yAxis="0" scale="1.00" offset="0"/>
+        </ReadItems>
+    </GraphOption>
+    <PacketOption autoHeader="0" autoCrc="0">
+        <PresetList>
+            <Preset title="Protocol2, Ping, ID1" value="FF FF FD 00 01 03 00 01 19 4E"/>
+            <Preset title="Protocol2, Read(0~9), ID1" value="FF FF FD 00 01 07 00 02 00 00 0A 00 22 E1"/>
+            <Preset title="Protocol2, Write(X series LED ON), ID1" value="FF FF FD 00 01 06 00 03 41 00 01 CC E6"/>
+            <Preset title="Protocol2, SyncRead(0~9), ID1, ID2" value="FF FF FD 00 FE 09 00 82 00 00 0A 00 01 02 40 C2"/>
+            <Preset title="Protocol2, SyncWrite(X series LED ON), ID1, ID2" value="FF FF FD 00 FE 0B 00 83 41 00 01 00 01 01 02 01 C1 74"/>
+            <Preset title="Protocol1, Ping, ID1" value="FF FF 01 02 01 FB"/>
+            <Preset title="Protocol1, Read(0~9), ID1" value="FF FF 01 04 02 00 0A EE"/>
+            <Preset title="Protocol1, Write(AX series LED ON), ID1" value="FF FF 01 04 03 19 01 DD"/>
+            <Preset title="Protocol1, SyncWrite(AX series LED ON), ID1, ID2" value="FF FF FE 08 83 18 01 01 01 02 01 58"/>
+        </PresetList>
+    </PacketOption>
+    <NewsOption date="" num=""/>
+    <ShortcutOption>
+        <ShortcutList>
+            <Shortcut command="eManual" item="" value="0" key="F1"/>
+            <Shortcut command="Scan" item="" value="0" key="F2"/>
+            <Shortcut command="Connect" item="" value="0" key="F3"/>
+            <Shortcut command="Options" item="" value="0" key="F4"/>
+            <Shortcut command="Graph" item="" value="0" key="F5"/>
+            <Shortcut command="Packet" item="" value="0" key="F6"/>
+            <Shortcut command="Recovery" item="" value="0" key="F7"/>
+            <Shortcut command="Update" item="" value="0" key="F8"/>
+            <Shortcut command="About" item="" value="0" key="F9"/>
+            <Shortcut command="Load Control Table" item="" value="0" key="F10"/>
+        </ShortcutList>
+    </ShortcutOption>
+    <LoggingOption>
+        <Graph use="0" interval="1000"/>
+        <Packet use="0"/>
+    </LoggingOption>
+    <GroupOption/>
+</Config>

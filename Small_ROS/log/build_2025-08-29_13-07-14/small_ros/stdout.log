@@ -1,0 +1,47 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/athira/Documents/Small_ROS/build/small_ros
+-- Install configuration: ""
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//config
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//config/joint_names_Small ROS.yaml
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//launch
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//launch/display.launch.py
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//launch/gazebo.launch.py
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//meshes
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//meshes/base_link.STL
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//meshes/Left_BK_Wheel.STL
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//meshes/Right_BK_Wheel.STL
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//meshes/Left_FR_Wheel.STL
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//meshes/Right_FR_Wheel.STL
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//urdf
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//urdf/Small_ROS.urdf
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros//urdf/Small ROS.csv
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/ament_index/resource_index/package_run_dependencies/small_ros
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/ament_index/resource_index/parent_prefix_path/small_ros
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/environment/ament_prefix_path.sh
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/environment/ament_prefix_path.dsv
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/environment/path.sh
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/environment/path.dsv
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/local_setup.bash
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/local_setup.sh
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/local_setup.zsh
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/local_setup.dsv
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/package.dsv
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/ament_index/resource_index/packages/small_ros
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/cmake/small_rosConfig.cmake
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/cmake/small_rosConfig-version.cmake
+-- Installing: /home/athira/Documents/Small_ROS/install/small_ros/share/small_ros/package.xml

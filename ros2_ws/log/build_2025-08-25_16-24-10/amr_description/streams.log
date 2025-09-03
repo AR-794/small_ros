@@ -1,0 +1,52 @@
+[1.330s] Invoking command in '/home/athira/Documents/ros2_ws/src/amr_description': PYTHONPATH=/home/athira/Documents/ros2_ws/build/amr_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/athira/Documents/ros2_ws/install/amr_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/amr_description build --build-base /home/athira/Documents/ros2_ws/build/amr_description/build install --record /home/athira/Documents/ros2_ws/build/amr_description/install.log --single-version-externally-managed install_data
+[1.589s] /home/athira/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.589s]   warnings.warn(msg)
+[1.872s] running egg_info
+[1.904s] writing ../../build/amr_description/amr_description.egg-info/PKG-INFO
+[1.905s] writing dependency_links to ../../build/amr_description/amr_description.egg-info/dependency_links.txt
+[1.906s] writing entry points to ../../build/amr_description/amr_description.egg-info/entry_points.txt
+[1.906s] writing requirements to ../../build/amr_description/amr_description.egg-info/requires.txt
+[1.907s] writing top-level names to ../../build/amr_description/amr_description.egg-info/top_level.txt
+[2.083s] adding license file 'LICENSE'
+[2.085s] writing manifest file '../../build/amr_description/amr_description.egg-info/SOURCES.txt'
+[2.085s] running build
+[2.085s] running build_py
+[2.085s] copying amr_description/driver.py -> /home/athira/Documents/ros2_ws/build/amr_description/build/lib/amr_description
+[2.086s] copying amr_description/odom_pub.py -> /home/athira/Documents/ros2_ws/build/amr_description/build/lib/amr_description
+[2.086s] copying amr_description/__init__.py -> /home/athira/Documents/ros2_ws/build/amr_description/build/lib/amr_description
+[2.087s] copying amr_description/sensed_object.py -> /home/athira/Documents/ros2_ws/build/amr_description/build/lib/amr_description
+[2.087s] copying amr_description/destination.py -> /home/athira/Documents/ros2_ws/build/amr_description/build/lib/amr_description
+[2.088s] copying amr_description/controller.py -> /home/athira/Documents/ros2_ws/build/amr_description/build/lib/amr_description
+[2.088s] running install
+[2.098s] running install_lib
+[2.131s] running install_data
+[2.132s] copying resource/amr_description -> /home/athira/Documents/ros2_ws/install/amr_description/share/ament_index/resource_index/packages
+[2.132s] copying package.xml -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description
+[2.134s] copying launch/joy.launch.py -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/launch
+[2.135s] copying launch/display.launch.py -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/launch
+[2.135s] copying launch/gazebo.launch.py -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/launch
+[2.137s] copying urdf/materials.xacro -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/urdf
+[2.138s] copying urdf/amr.xacro.urdf -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/urdf
+[2.138s] copying urdf/amr.trans -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/urdf
+[2.138s] copying urdf/macros.xacro -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/urdf
+[2.138s] copying urdf/amr.gazebo -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/urdf
+[2.139s] copying urdf/amr.xacro -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/urdf
+[2.139s] copying meshes/assembly_2_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.140s] copying meshes/wheel_4_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.140s] copying meshes/base_link.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.141s] copying meshes/wheel_2_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.142s] copying meshes/wheel_1_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.142s] copying meshes/wheel_3_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.143s] copying meshes/lidar_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.143s] copying meshes/assembly_3_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.144s] copying meshes/assembly_1_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.145s] copying meshes/assembly_4_1.stl -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/meshes
+[2.145s] copying config/joystick.yaml -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/config
+[2.146s] copying config/controller.yaml -> /home/athira/Documents/ros2_ws/install/amr_description/share/amr_description/config
+[2.146s] running install_egg_info
+[2.187s] removing '/home/athira/Documents/ros2_ws/install/amr_description/lib/python3.10/site-packages/amr_description-0.0.0-py3.10.egg-info' (and everything under it)
+[2.189s] Copying ../../build/amr_description/amr_description.egg-info to /home/athira/Documents/ros2_ws/install/amr_description/lib/python3.10/site-packages/amr_description-0.0.0-py3.10.egg-info
+[2.194s] running install_scripts
+[2.290s] Installing controller script to /home/athira/Documents/ros2_ws/install/amr_description/lib/amr_description
+[2.292s] writing list of installed files to '/home/athira/Documents/ros2_ws/build/amr_description/install.log'
+[2.361s] Invoked command in '/home/athira/Documents/ros2_ws/src/amr_description' returned '0': PYTHONPATH=/home/athira/Documents/ros2_ws/build/amr_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/athira/Documents/ros2_ws/install/amr_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/amr_description build --build-base /home/athira/Documents/ros2_ws/build/amr_description/build install --record /home/athira/Documents/ros2_ws/build/amr_description/install.log --single-version-externally-managed install_data

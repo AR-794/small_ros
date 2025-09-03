@@ -1,0 +1,56 @@
+[5.146s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/athira/Documents/ros2_ws']
+[5.151s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/athira/Documents/ros2_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7444d64bcc70>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7444d643da20>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7444d643da20>>)
+[5.852s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.862s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/athira/Documents/ros2_ws'
+[5.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[5.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'ignore'
+[5.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'ignore_ament_install'
+[5.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extensions ['colcon_pkg']
+[5.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'colcon_pkg'
+[5.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extensions ['colcon_meta']
+[5.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'colcon_meta'
+[5.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extensions ['ros']
+[5.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'ros'
+[6.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extensions ['cmake', 'python']
+[6.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'cmake'
+[6.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'python'
+[6.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extensions ['python_setup_py']
+[6.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws) by extension 'python_setup_py'
+[6.077s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[6.078s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/build) by extension 'ignore'
+[6.083s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/build) ignored
+[6.083s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[6.083s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/install) by extension 'ignore'
+[6.084s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/install) ignored
+[6.084s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[6.084s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/log) by extension 'ignore'
+[6.084s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/log) ignored
+[6.088s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[6.088s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'ignore'
+[6.088s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'ignore_ament_install'
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extensions ['colcon_pkg']
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'colcon_pkg'
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extensions ['colcon_meta']
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'colcon_meta'
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extensions ['ros']
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'ros'
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extensions ['cmake', 'python']
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'cmake'
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'python'
+[6.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extensions ['python_setup_py']
+[6.090s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src) by extension 'python_setup_py'
+[6.092s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extensions ['ignore', 'ignore_ament_install']
+[6.092s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extension 'ignore'
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extension 'ignore_ament_install'
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extensions ['colcon_pkg']
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extension 'colcon_pkg'
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extensions ['colcon_meta']
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extension 'colcon_meta'
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extensions ['ros']
+[6.093s] Level 1:colcon.colcon_core.package_identification:_identify(/home/athira/Documents/ros2_ws/src/amr_description) by extension 'ros'
+[6.123s] DEBUG:colcon.colcon_core.package_identification:Package '/home/athira/Documents/ros2_ws/src/amr_description' with type 'ros.ament_python' and name 'amr_description'
+[6.123s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

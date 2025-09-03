@@ -1,0 +1,9 @@
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/uninstall.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/small_ros_uninstall.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/test.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/edit_cache.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/rebuild_cache.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/list_install_components.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/install.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/install/local.dir
+/home/athira/Documents/Small_ROS/build/small_ros/CMakeFiles/install/strip.dir

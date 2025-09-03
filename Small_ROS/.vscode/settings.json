@@ -1,0 +1,29 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/athira/Documents/mini_nav/install/depthai_ros_driver/local/lib/python3.10/dist-packages",
+        "/home/athira/Documents/mini_nav/install/depthai_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/athira/Documents/mini_nav/install/amr_description/lib/python3.10/site-packages",
+        "/home/athira/saved/bldc_enc_urdf/install/mcl/lib/python3.10/site-packages",
+        "/home/athira/TASK1A/install/ur5_control/lib/python3.10/site-packages",
+        "/home/athira/TASK1A/install/pymoveit2/local/lib/python3.10/dist-packages",
+        "/home/athira/TASK1A/install/my_py_pkg/lib/python3.10/site-packages",
+        "/home/athira/TASK1A/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
+        "/home/athira/TASK1A/install/aruco_detector/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/athira/Documents/mini_nav/install/depthai_ros_driver/local/lib/python3.10/dist-packages",
+        "/home/athira/Documents/mini_nav/install/depthai_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/athira/Documents/mini_nav/install/amr_description/lib/python3.10/site-packages",
+        "/home/athira/saved/bldc_enc_urdf/install/mcl/lib/python3.10/site-packages",
+        "/home/athira/TASK1A/install/ur5_control/lib/python3.10/site-packages",
+        "/home/athira/TASK1A/install/pymoveit2/local/lib/python3.10/dist-packages",
+        "/home/athira/TASK1A/install/my_py_pkg/lib/python3.10/site-packages",
+        "/home/athira/TASK1A/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
+        "/home/athira/TASK1A/install/aruco_detector/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "ros.distro": "humble"
+}

@@ -1,0 +1,50 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50 # Hz
+
+    swerve_drive_controller:
+      type: "swerve_drive_controller/SwerveDriveController" # Assuming a pre-existing package provides this controller type
+    
+    swerve_steering_controller:
+      type: "position_controllers/JointGroupPositionController"
+    swerve_velocity_controller:
+      type: "velocity_controllers/JointGroupVelocityController"
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+# Parameters for the new swerve drive controller
+swerve_drive_controller:
+  ros__parameters:
+    # Kinematic parameters for your robot (replace with your values)
+    wheel_base: 0.5 # Distance between front and rear swerve modules
+    track_width: 0.4 # Distance between left and right swerve modules
+    
+    # Map the joints to the swerve controller
+    steering_joints:
+      - a1_bl
+      - a3_bl
+      - a2_bl
+      - a4_bl
+    velocity_joints:
+      - w1_a1
+      - w2_a2
+      - w3_a3
+      - w4_a4
+    
+# Your existing controller definitions remain the same
+swerve_steering_controller:
+  ros__parameters:
+    joints:
+      - a1_bl
+      - a3_bl
+      - a2_bl
+      - a4_bl
+    
+swerve_velocity_controller:
+  ros__parameters:
+    joints:
+      - w1_a1
+      - w2_a2
+      - w3_a3
+      - w4_a4

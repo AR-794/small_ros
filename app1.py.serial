@@ -1,0 +1,112 @@
+from flask import Flask, render_template, url_for
+from flask_socketio import SocketIO
+from neopixel_control import neopixel_control  # Assuming this is a custom module for controlling NeoPixels
+import asyncio
+import websockets
+import threading
+import json
+import time
+import os
+import subprocess
+import serial
+
+app = Flask(__name__)
+socketio = SocketIO(app, cors_allowed_origins="*")
+
+ser = serial.Serial("/dev/ttyUSB0", 9600, timeout=1)
+# Keep track of connected ESP32 clients
+# ---------------- Flask routes ----------------
+@app.route('/')
+def loading():
+    dashboard_url = url_for('dashboard')
+    return render_template('loading.html', dashboard_url=dashboard_url)
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
+
+@app.route('/system_control')
+def system_control():
+    return render_template('system_control.html')
+
+@app.route('/wind_control')
+def wind_control():
+    return render_template('wind_control.html')
+
+@app.route('/settings')
+def settings():
+    # Old code reference (kept as comment)
+    # threading.Thread(target=_check_esp_status_for_settings, daemon=True).start()
+    return render_template('settings.html')
+
+# Old code function (kept as comment)
+
+def shutdown():
+    print("Shutdown requested from frontend.")
+    try:
+        subprocess.Popen(['sudo', 'shutdown', '-h', 'now'])
+        return 'Shutting down...', 200
+    except Exception as e:
+        print(f"Shutdown failed: {e}")
+        return f"Shutdown failed: {e}", 500
+    
+def start_browser():
+    try:
+        time.sleep(5)
+        env = os.environ.copy()
+        env['DISPLAY'] = ':0'
+        normal_user = 'energyplant'
+        env['XAUTHORITY'] = f'/home/{normal_user}/.Xauthority'
+        subprocess.Popen([
+            'sudo', '-u', normal_user, 'firefox',
+            '--no-sandbox',
+            '--disable-infobars',
+            '--kiosk',
+            'http://localhost:5000'
+        ], env=env)
+    except Exception as e:
+        print("Browser failed to launch:", e)
+
+
+# ---------------- Receive frontend Socket.IO events ----------------
+@socketio.on('control_event')
+def handle_control_event(data=None):
+    print(f"Received control_event: {data}")
+    command = data.get("command")
+    value = int(data.get("value"))
+
+    if command == "apply_time":
+        command = "s"
+    if command == "rpm":
+        command = "w"
+    if command == "cleaning":
+        command = "c"
+    if command is not None and value is not None:
+        msg = f"{command}{value}\n"
+        ser.write(msg.encode())
+        print(f"Sent to ESP32: {msg.strip()}")
+
+    # Old code with neopixel control (kept as comment)
+    if data['command'] == 'shutdown':
+        print("Received shutdown event")
+        shutdown()
+    # if data['command'] == 'start_button':
+    #     if data['value'] == 0:
+    #         print("Received start_button event")
+    #         neopixel_control(0, "rpm")
+    #         neopixel_control(0, "apply_time")
+    # if data['command'] == 'cleaning':
+    #     print("Received cleaning event")
+    #     neopixel_control(0, "rpm")
+    #     neopixel_control(0, "apply_time")
+    # if data['command'] == 'apply_time':
+    #     print("Received apply_time event")
+    #     neopixel_control(data['value'], "apply_time")
+    # if data['command'] == 'rpm':
+    #     print("Received rpm event")
+    #     neopixel_control(data['value'], "rpm")
+
+    
+if __name__ == "__main__":
+    threading.Thread(target=start_browser).start()
+    socketio.run(app, host="0.0.0.0", port=5000, debug=False, allow_unsafe_werkzeug=True)
